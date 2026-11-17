@@ -38,21 +38,21 @@
 
 
 <?php
-if (isset($_POST['submit'])) // it checks if the input submit is filled 
-{
-	$num1 = $_POST['num1'];
-	$num2 = $_POST['num2'];
-	if (is_numeric($num1) and is_numeric($num2)) 
+	if (isset($_POST['submit'])) // it checks if the input submit is filled 
 	{
-		echo "<tr><td colspan='2'> Addition :</td><td><p>" . ($num1 + $num2) . "</p></td></tr>";
-		echo "<tr><td colspan='2'> Subtraction :</td><td><p>" . ($num1 -$num2) . "</p></td></tr>";
-		echo "<tr><td colspan='2'> Multiplication :</td><td><p>" . ($num1 * $num2) . "</p></td></tr>";
-		echo "<tr><td colspan='2'> Division :</td><td><p>" . ($num1 / $num2) . "</p></td></tr>";
-		echo "</table>";
-	} else {
-			echo "<script type='text/javascript'>alert(' ENTER VALID 
-			NUMBERS');</script>";
-		}
-}
+		$num1 = $_POST['num1'];
+		$num2 = $_POST['num2'];
+		if (is_numeric($num1) and is_numeric($num2)) 
+		{
+			echo "<tr><td colspan='2'> Addition :</td><td><p>" . ($num1 + $num2) . "</p></td></tr>";
+			echo "<tr><td colspan='2'> Subtraction :</td><td><p>" . ($num1 -$num2) . "</p></td></tr>";
+			echo "<tr><td colspan='2'> Multiplication :</td><td><p>" . ($num1 * $num2) . "</p></td></tr>";
+			echo "<tr><td colspan='2'> Division :</td><td><p>" . ($num1 / $num2) . "</p></td></tr>";
+			echo "</table>";
+		} else {
+				echo "<script type='text/javascript'>alert(' ENTER VALID 
+				NUMBERS');</script>";
+			}
+	}
 ?>
 </html>
